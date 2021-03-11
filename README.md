@@ -8,8 +8,8 @@ This service solves the gift card challenge
 * Run project with:  
   * mvn spring-boot:run
 * Find Pair
-  * curl -F file=@"src/test/resources/products.csv" 'http://localhost:8080/demo/findPair/2400'
-* Swagger is available at http://localhost:8080/swagger-ui.html 
+  * curl -F file=@"src/test/resources/products.csv" 'http://ec2-54-189-131-2.us-west-2.compute.amazonaws.com:8080/demo/findPair/2400'
+* Swagger is available at http://ec2-54-189-131-2.us-west-2.compute.amazonaws.com:8080/swagger-ui.html 
 
 
 ## Built With
