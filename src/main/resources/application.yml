@@ -1,0 +1,38 @@
+spring.profiles.active: dev
+
+spring:
+    application:
+        name: demo.solution
+
+logging:
+    level:
+        ROOT: INFO
+        com.example.demo: DEBUG
+
+---
+
+spring:
+    profiles: qa
+
+logging:
+    level:
+        ROOT: INFO
+        com.example.demo: INFO
+
+---
+
+spring:
+    profiles: stage
+
+logging:
+    level:
+        com.example.demo: ERROR
+
+---
+
+spring:
+    profiles: production
+
+logging:
+    level:
+        com.example.demo: ERROR
